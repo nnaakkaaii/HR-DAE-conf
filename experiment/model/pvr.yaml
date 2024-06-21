@@ -1,7 +1,5 @@
 loss_coef:
   mse: 1
-phase: "0"
-pred_diff: false
 network_weight:
   content_encoder: undefined
   decoder: undefined
