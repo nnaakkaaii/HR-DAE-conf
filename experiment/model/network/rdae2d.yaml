@@ -1,5 +1,5 @@
 in_channels: 2
-latent_dim: 64
+latent_dim: 8
 conv_params:
   - kernel_size: [3]
     stride: [2]
