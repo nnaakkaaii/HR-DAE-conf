@@ -1,4 +1,4 @@
-in_channels: 2
+in_channels: 1
 latent_dim: 8
 conv_params:
   - kernel_size: [3]
