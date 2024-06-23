@@ -1,5 +1,6 @@
 in_channels: 1
-latent_dim: 8
+hidden_channels: 64
+latent_dim: 4
 conv_params:
   - kernel_size: [3]
     stride: [2]
@@ -21,7 +22,7 @@ conv_params:
 #     stride: [2]
 #     padding: [1]
 #     output_padding: [1]
-aggregation_method: sum  # sum when to use pvr
+aggregator: attention
 activation: sigmoid  # tanh if pred_diff = true
 debug_show_dim: false
 defaults:
