@@ -1,0 +1,17 @@
+serialize: true
+loss_g_coef:
+  bce: 0.5
+  tsim: 0.5
+loss_d_coef:
+  bce: 0.5
+defaults:
+  - /config/experiment/model/gan@_here_
+  - loss_g@loss_g.bce: bce
+  - loss_g@loss_g.tsim: tsim
+  - loss_d@loss_d.bce: bce
+  - generator: autoencoder2d
+  - discriminator: discriminator2d
+  - optimizer_g: adam
+  - optimizer_d: adam
+  - scheduler_g: onecyclelr
+  - scheduler_d: onecyclelr

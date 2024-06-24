@@ -1,0 +1,27 @@
+hidden_channels: 64
+latent_dim: 4
+conv_params:
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+#   - kernel_size: [3]
+#     stride: [2]
+#     padding: [1]
+#     output_padding: [1]
+activation: sigmoid  # tanh if pred_diff = true
+debug_show_dim: false
+defaults:
+  - /config/experiment/model/generator/autoencoder2d@_here_
