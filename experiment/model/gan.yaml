@@ -3,7 +3,7 @@ loss_g_coef:
   bce: 0.5
   tsim: 0.5
 loss_d_coef:
-  bce: 0.5
+  bce: 1.0
 defaults:
   - /config/experiment/model/gan@_here_
   - loss_g@loss_g.bce: bce
