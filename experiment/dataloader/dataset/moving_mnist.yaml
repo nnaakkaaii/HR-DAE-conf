@@ -1,4 +1,5 @@
 root: data
+sequential: true
 slice_index: [16, 32, 48]
 content_phase: "0"
 motion_phase: "0"
