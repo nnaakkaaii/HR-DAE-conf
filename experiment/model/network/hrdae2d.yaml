@@ -1,4 +1,5 @@
-latent_dim: 64
+hidden_channels: 64
+latent_dim: 4
 conv_params:
   - kernel_size: [3]
     stride: [2]
@@ -20,7 +21,7 @@ conv_params:
 #     stride: [2]
 #     padding: [1]
 #     output_padding: [1]
-aggregation_method: concat
+aggregator: concatenation
 activation: sigmoid  # tanh if pred_diff = true
 debug_show_dim: false
 defaults:
