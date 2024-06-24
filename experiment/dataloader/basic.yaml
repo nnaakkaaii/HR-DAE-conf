@@ -1,4 +1,3 @@
-aggregate_dim: 0
 batch_size: 256
 train_val_ratio: 0.8
 transform_order_train:
