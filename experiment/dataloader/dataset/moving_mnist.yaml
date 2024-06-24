@@ -1,6 +1,6 @@
 root: data
 slice_index: [16, 32, 48]
-sequential: false
+wrap: serialize
 content_phase: "0"
 motion_phase: "0"
 motion_aggregation: "none"
