@@ -1,9 +1,9 @@
 loss_coef:
-  wmse: 0.5
-  mstd: 0.5
+  mse: 0.8
+  mstd: 0.2
 defaults:
   - /config/experiment/model/vr@_here_
-  - loss@loss.wmse: wmse
+  - loss@loss.mse: mse
   - loss@loss.mstd: mstd
   # - network: hrdae3d
   - network: hrdae2d

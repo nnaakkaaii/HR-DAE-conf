@@ -23,6 +23,7 @@ conv_params:
 #     output_padding: [1]
 aggregator: concatenation
 activation: sigmoid  # tanh if pred_diff = true
+cycle: true
 debug_show_dim: false
 defaults:
   - /config/experiment/model/network/hrdae2d@_here_
