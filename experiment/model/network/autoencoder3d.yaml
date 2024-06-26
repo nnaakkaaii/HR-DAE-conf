@@ -1,15 +1,15 @@
-hidden_channels: 256
-latent_dim: 16
+hidden_channels: 64
+latent_dim: 8
 conv_params:
-  - kernel_size: [3]  # 128 -> 64
+  - kernel_size: [3]  # 64, 128 -> 32, 64
     stride: [2]
     padding: [1]
     output_padding: [1]
-  - kernel_size: [3]  # 64 -> 32
+  - kernel_size: [3]  # 32, 64 -> 16, 32
     stride: [2]
     padding: [1]
     output_padding: [1]
-  - kernel_size: [3]  # 32 -> 16
+  - kernel_size: [3]  # 16, 32 -> 8, 16
     stride: [2]
     padding: [1]
     output_padding: [1]
@@ -20,4 +20,4 @@ conv_params:
 activation: sigmoid  # tanh if pred_diff = true
 debug_show_dim: false
 defaults:
-  - /config/experiment/model/network/autoencoder2d@_here_
+  - /config/experiment/model/network/autoencoder3d@_here_

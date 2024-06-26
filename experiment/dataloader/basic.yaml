@@ -1,4 +1,4 @@
-batch_size: 64
+batch_size: 8
 train_val_ratio: 0.8
 # transform_order_train:
 #   - min_max_normalization
