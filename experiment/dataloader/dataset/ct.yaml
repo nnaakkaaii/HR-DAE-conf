@@ -1,5 +1,9 @@
 root: data
+sequential: true
 slice_index: [48, 80]  # size should be (64, 128, 128)
+content_phase: "0"
+motion_phase: "0"
+motion_aggregate: "none"
 threshold: 0.1
 min_occupancy: 0.2
 in_memory: false
