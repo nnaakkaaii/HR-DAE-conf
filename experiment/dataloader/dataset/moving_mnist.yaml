@@ -1,6 +1,6 @@
 root: data
 sequential: true
-slice_index: [10, 21, 32, 43, 54]
+slice_index: [8, 16, 24, 32, 40, 48, 56]
 content_phase: "random"
 motion_phase: "0"
 motion_aggregation: "none"
