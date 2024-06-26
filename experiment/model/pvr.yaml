@@ -1,14 +1,14 @@
 loss_coef:
-  wmse: 1
+  mse: 0.8
+  mstd: 0.2
 network_weight:
-  content_encoder: undefined
   decoder: undefined
 network_grad:
-  content_encoder: false
   decoder: false
 defaults:
   - /config/experiment/model/pvr@_here_
-  - loss@loss.wmse: wmse
-  - network: rdae2d
+  - loss@loss.mse: mse
+  - loss@loss.mstd: mstd
+  - network: hrdae2d
   - optimizer: adam
   - scheduler: onecyclelr
