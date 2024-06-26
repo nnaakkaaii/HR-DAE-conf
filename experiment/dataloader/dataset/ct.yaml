@@ -1,5 +1,5 @@
 root: data
-slice_index: [8, 16, 24, 32, 40, 48, 56]
+slice_index: [16, 32, 48]
 threshold: 0.1
 min_occupancy: 0.2
 in_memory: false
