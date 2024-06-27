@@ -1,5 +1,5 @@
-hidden_channels: 64
-latent_dim: 8
+hidden_channels: 256
+latent_dim: 32
 conv_params:
   - kernel_size: [3]  # 64, 128 -> 32, 64
     stride: [2]
