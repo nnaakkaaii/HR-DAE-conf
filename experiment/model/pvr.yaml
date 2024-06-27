@@ -9,6 +9,6 @@ defaults:
   - /config/experiment/model/pvr@_here_
   - loss@loss.mse: mse
   - loss@loss.mstd: mstd
-  - network: rdae2d
+  - network: hrdae2d
   - optimizer: adam
   - scheduler: onecyclelr
