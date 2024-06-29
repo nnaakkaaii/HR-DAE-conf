@@ -1,6 +1,6 @@
 loss_coef:
-  mse: 0.8
-  mstd: 0.2
+  mse: 0.9
+  contrastive: 0.1
 network_weight:
   decoder: undefined
 network_grad:
@@ -8,7 +8,7 @@ network_grad:
 defaults:
   - /config/experiment/model/pvr@_here_
   - loss@loss.mse: mse
-  - loss@loss.mstd: mstd
-  - network: hrdae2d
+  - loss@loss.contrastive: contrastive
+  - network: rdae2d
   - optimizer: adam
   - scheduler: onecyclelr
