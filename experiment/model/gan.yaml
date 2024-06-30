@@ -1,15 +1,13 @@
-serialize: true
-loss_g_coef:
-  bce: 0.5
-  tsim: 0.5
-loss_d_coef:
-  bce: 1.0
+loss_coef:
+  mse: 0.8
+  mstd: 0.2
 defaults:
   - /config/experiment/model/gan@_here_
-  - loss_g@loss_g.bce: bce
-  - loss_g@loss_g.tsim: tsim
-  - loss_d@loss_d.bce: bce
-  - generator: autoencoder2d
+  - loss@loss.mse: mse
+  - loss@loss.mstd: mstd
+  - loss_g: bce
+  - loss_d: bce
+  - generator: hrdae2d
   - discriminator: discriminator2d
   - optimizer_g: adam
   - optimizer_d: adam
