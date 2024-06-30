@@ -1,0 +1,27 @@
+weight: ./results/BasicDataLoaderOption/BasicModelOption/AutoEncoder2dNetworkOption/2024-06-28_06-30-41/weights/best_encoder.pth
+in_channels: 1
+hidden_channels: 64
+latent_dim: 32
+conv_params:
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]
+    stride: [1]
+    padding: [1]
+activation: sigmoid
+defaults:
+  - /config/experiment/model/loss/perceptual2d@_here_
