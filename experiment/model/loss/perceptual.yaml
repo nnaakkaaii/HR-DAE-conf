@@ -1,4 +1,4 @@
-weight: ./results/BasicDataLoaderOption/BasicModelOption/AutoEncoder2dNetworkOption/2024-06-28_06-30-41/weights/best_encoder.pth
+weight: ./bin/mmnist/autoencoder2d/best_encoder.pth
 in_channels: 1
 hidden_channels: 64
 latent_dim: 32
