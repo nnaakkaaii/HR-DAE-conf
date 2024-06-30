@@ -1,10 +1,10 @@
 loss_coef:
   mse: 0.8
-  mstd: 0.2
+  contrastive: 0.2
 defaults:
   - /config/experiment/model/vr@_here_
   - loss@loss.mse: mse
-  - loss@loss.mstd: mstd
+  - loss@loss.contrastive: contrastive
   # - network: hrdae3d
   - network: hrdae2d
   - optimizer: adam

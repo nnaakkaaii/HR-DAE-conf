@@ -2,6 +2,7 @@ batch_size: 32
 train_val_ratio: 0.8
 transform_order_train:
   - min_max_normalization
+  - random_shift2d
 transform_order_val:
   - min_max_normalization
 # transform_order_train:
@@ -13,6 +14,7 @@ defaults:
   - /config/experiment/dataloader/basic@_here_
   - dataset: moving_mnist
   - transform@transform.min_max_normalization: min_max_normalization
+  - transform@transform.random_shift2d: random_shift2d
   # - dataset: ct
   # - transform@transform.random_shift3d: random_shift3d
   # - transform@transform.pool3d: pool3d
