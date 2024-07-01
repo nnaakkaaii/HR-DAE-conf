@@ -1,9 +1,11 @@
 serialize: true
 loss_coef:
-  mse: 1.0
+  mse: 0.5
+  contrastive: 0.5
 defaults:
   - /config/experiment/model/basic@_here_
   - loss@loss.mse: mse
+  - loss@loss.contrastive: contrastive
   - network: autoencoder2d
   - optimizer: adam
   - scheduler: onecyclelr
