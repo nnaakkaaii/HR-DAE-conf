@@ -1,0 +1,10 @@
+root: data
+sequential: true
+slice_index: [48, 80]  # size should be (128,)
+slice_axis: z
+slice_num: 64
+content_phase: "random"
+motion_phase: "0"
+motion_aggregation: "none"
+defaults:
+  - /config/experiment/dataloader/dataset/sliced_ct@_here_

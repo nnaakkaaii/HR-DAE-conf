@@ -1,13 +1,14 @@
 loss_coef:
-  perceptual: 0.4
-  mse: 0.4
+  # perceptual2d: 0.4
+  mse: 0.6
   mstd: 0.2
+  contrastive: 0.2
 defaults:
   - /config/experiment/model/vr@_here_
-  - loss@loss.perceptual: perceptual
+  # - loss@loss.perceptual2d: perceptual2d
   - loss@loss.mse: mse
   - loss@loss.mstd: mstd
-  # - network: hrdae3d
+  - loss@loss.contrastive: contrastive
   - network: hrdae2d
   - optimizer: adam
   - scheduler: onecyclelr
