@@ -1,4 +1,4 @@
-weight: ./bin/mmnist/autoencoder2d/best_encoder.pth
+weight: ./bin/mmnist/autoencoder2d/contrastive05/best_encoder.pth
 in_channels: 1
 hidden_channels: 64
 latent_dim: 32
