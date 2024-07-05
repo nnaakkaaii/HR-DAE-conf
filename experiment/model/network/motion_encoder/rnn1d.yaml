@@ -1,5 +1,5 @@
-in_channels: 7
-hidden_channels: 64
+in_channels: 2
+hidden_channels: 128
 conv_params:
   - kernel_size: [3]
     stride: [2]

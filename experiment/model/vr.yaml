@@ -1,11 +1,12 @@
 loss_coef:
-  wmse: 1
+  wmse: 0.5
+  mstd: 0.5
 phase: "all"
 pred_diff: false
 defaults:
   - /config/experiment/model/vr@_here_
   - loss@loss.wmse: wmse
-  - network: hrdae3d
-  # - network: hrdae2d
+  - loss@loss.mstd: mstd
+  - network: hrdae2d
   - optimizer: adam
   - scheduler: onecyclelr
