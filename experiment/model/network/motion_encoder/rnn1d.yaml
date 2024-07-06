@@ -28,4 +28,4 @@ deconv_params:
     output_padding: [0, 1]
 defaults:
   - /config/experiment/model/network/motion_encoder/rnn1d@_here_
-  - rnn: tcn1d
+  - rnn: gru1d
