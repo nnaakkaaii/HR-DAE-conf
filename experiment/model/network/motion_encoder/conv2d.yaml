@@ -14,23 +14,14 @@ conv_params:
     padding: [1]
     output_padding: [0, 1]
 deconv_params:
-  - kernel_size: [3]  # 1 -> 2
-    stride: [1, 2]
-    padding: [1]
-    output_padding: [0, 1]
-  - kernel_size: [3]
+  - kernel_size: [3]  # 8.1 -> 16,2
     stride: [2]
     padding: [1]
-  - kernel_size: [3]  # 2 -> 4
-    stride: [1, 2]
-    padding: [1]
-    output_padding: [0, 1]
-  - kernel_size: [3]
+  - kernel_size: [3]  # 16,2 -> 32,4
     stride: [2]
     padding: [1]
-  - kernel_size: [3]  # 4 -> 8
-    stride: [1, 2]
+  - kernel_size: [3]  # 32,4 -> 64,8
+    stride: [2]
     padding: [1]
-    output_padding: [0, 1]
 defaults:
   - /config/experiment/model/network/motion_encoder/conv2d@_here_
