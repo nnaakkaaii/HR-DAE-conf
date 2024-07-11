@@ -20,4 +20,4 @@ cycle: true
 debug_show_dim: false
 defaults:
   - /config/experiment/model/network/hrdae2d@_here_
-  - motion_encoder: conv2d
+  - motion_encoder: normal1d
