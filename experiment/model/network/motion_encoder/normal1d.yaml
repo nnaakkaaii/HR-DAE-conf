@@ -2,16 +2,23 @@ in_channels: 5
 hidden_channels: 64
 conv_params:
   - kernel_size: [3]  # 64 -> 32
-    stride: [1, 2]
+    stride: [2]
     padding: [1]
-    output_padding: [0, 1]
   - kernel_size: [3]  # 32 -> 16
-    stride: [1, 2]
+    stride: [2]
     padding: [1]
-    output_padding: [0, 1]
   - kernel_size: [3]  # 16 -> 8
-    stride: [1, 2]
+    stride: [2]
     padding: [1]
-    output_padding: [0, 1]
+deconv_params:
+  - kernel_size: [3]  # 8.1 -> 16,2
+    stride: [2]
+    padding: [1]
+  - kernel_size: [3]  # 16,2 -> 32,4
+    stride: [2]
+    padding: [1]
+  - kernel_size: [3]  # 32,4 -> 64,8
+    stride: [2]
+    padding: [1]
 defaults:
-  - /config/experiment/model/network/motion_encoder/conv2d@_here_
+  - /config/experiment/model/network/motion_encoder/normal1d@_here_
