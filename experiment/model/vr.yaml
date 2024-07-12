@@ -9,6 +9,6 @@ defaults:
   # - loss@loss.mse: mse
   - loss@loss.mstd: mstd
   # - loss@loss.contrastive: contrastive
-  - network: rdae2d
+  - network: rae2d
   - optimizer: adam
   - scheduler: onecyclelr
