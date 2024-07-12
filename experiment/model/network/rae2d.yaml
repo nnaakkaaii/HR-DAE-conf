@@ -1,0 +1,20 @@
+hidden_channels: 64
+latent_dim: 8
+conv_params:
+  - kernel_size: [3]  # 64 -> 32
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]  # 32 -> 16
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+  - kernel_size: [3]  # 16 -> 8
+    stride: [2]
+    padding: [1]
+    output_padding: [1]
+activation: sigmoid  # tanh if pred_diff = true
+debug_show_dim: false
+defaults:
+  - /config/experiment/model/network/rae2d@_here_
+  - motion_encoder: conv2d
