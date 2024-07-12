@@ -1,5 +1,5 @@
 in_channels: 2
-hidden_channels: 128
+hidden_channels: 32
 conv_params:
   - kernel_size: [3]  # 64 -> 32
     stride: [1, 2]
@@ -21,9 +21,6 @@ deconv_params:
     stride: [2]
     padding: [1]
   - kernel_size: [3]  # 32,4 -> 64,8
-    stride: [2]
-    padding: [1]
-  - kernel_size: [3]  # 64,8 -> 128,16
     stride: [2]
     padding: [1]
 defaults:
