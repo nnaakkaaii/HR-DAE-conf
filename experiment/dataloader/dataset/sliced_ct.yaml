@@ -1,9 +1,10 @@
 root: data
+in_memory: true
 sequential: true
-slice_index: [48, 80]  # size should be (128,)
+slice_index: [24, 40]  # size should be (128,)
 slice_axis: y
-slice_range: [48, 80]
-content_phase: "all"
+slice_range: [24, 40]
+content_phase: "0"
 motion_phase: "0"
 motion_aggregation: "none"
 defaults:

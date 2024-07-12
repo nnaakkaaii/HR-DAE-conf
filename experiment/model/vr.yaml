@@ -1,12 +1,12 @@
 loss_coef:
-  # perceptual2d: 0.4
-  wmse: 0.8
-  mstd: 0.2
+  perceptual2d: 0.5
+  # wmse: 0.8
+  mstd: 0.5
   # contrastive: 0.2
 defaults:
   - /config/experiment/model/vr@_here_
-  # - loss@loss.perceptual2d: perceptual2d
-  - loss@loss.wmse: wmse
+  - loss@loss.perceptual2d: perceptual2d
+  # - loss@loss.wmse: wmse
   - loss@loss.mstd: mstd
   # - loss@loss.contrastive: contrastive
   - network: hrdae2d
