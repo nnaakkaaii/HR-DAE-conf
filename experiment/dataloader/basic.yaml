@@ -1,4 +1,4 @@
-batch_size: 256
+batch_size: 128
 train_val_ratio: 0.8
 transform_order_train:
   - pool2d
