@@ -1,13 +1,16 @@
+use_triplet: true
 loss_coef:
   perceptual2d: 0.5
   # mse: 0.5
   mstd: 0.5
+  # triplet: 0.5
   # contrastive: 0.5
 defaults:
   - /config/experiment/model/vr@_here_
   - loss@loss.perceptual2d: perceptual2d
   # - loss@loss.mse: mse
   - loss@loss.mstd: mstd
+  # - loss@loss.triplet: triplet
   # - loss@loss.contrastive: contrastive
   - network: hrdae2d
   - optimizer: adam
