@@ -1,22 +1,8 @@
 in_channels: 16
+# in_channels: 8
 hidden_channels: 256
-conv_params:
-  - kernel_size: [3]
-    stride: [2]
-    padding: [1]
-  - kernel_size: [3]
-    stride: [2, 1]
-    padding: [1]
-  - kernel_size: [3]
-    stride: [2, 1]
-    padding: [1]
-  - kernel_size: [3]
-    stride: [2, 1]
-    padding: [1]
-#   - kernel_size: [3]
-#     stride: [2]
-#     padding: [1]
-#     output_padding: [1]
-debug_show_dim: false
+image_size: [8, 8]
+dropout_rate: 0.1
+fc_layer: 2
 defaults:
   - /config/experiment/model/discriminator/discriminator2d@_here_

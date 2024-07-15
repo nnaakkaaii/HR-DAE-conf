@@ -7,6 +7,7 @@ defaults:
   - loss@loss.mstd: mstd
   - loss_g: bce
   - loss_d: bce
+  # - network: rdae2d
   - network: hrdae2d
   - discriminator: discriminator2d
   - optimizer_g: adam
