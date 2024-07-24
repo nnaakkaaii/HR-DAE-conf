@@ -1,4 +1,6 @@
-latent_dim: 64
+in_channels: 1
+hidden_channels: 128
+latent_dim: 32
 conv_params:
   - kernel_size: [3]
     stride: [2]
@@ -12,13 +14,12 @@ conv_params:
     stride: [2]
     padding: [1]
     output_padding: [1]
-  - kernel_size: [3]
-    stride: [2]
-    padding: [1]
-    output_padding: [1]
-aggregation_method: concat
-activation: sigmoid  # tanh if pred_diff = true
+upsample_size: [8, 8, 8]
+aggregator: 'concatenation'
+connection_aggregation: 'concatenation'
+cycle: false
+activation: 'sigmoid'
 debug_show_dim: false
 defaults:
   - /config/experiment/model/network/hrdae3d@_here_
-  - motion_encoder: rnn2d
+  - motion_encoder: conv3d

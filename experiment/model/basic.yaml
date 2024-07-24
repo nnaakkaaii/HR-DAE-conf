@@ -1,11 +1,9 @@
 serialize: true
 loss_coef:
-  mse: 0.1
-  tsim: 0.9
+  mse: 1.0
 defaults:
   - /config/experiment/model/basic@_here_
   - loss@loss.mse: mse
-  - loss@loss.tsim: tsim
-  - network: autoencoder2d
+  - network: hrdae3d
   - optimizer: adam
   - scheduler: onecyclelr

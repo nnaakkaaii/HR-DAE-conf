@@ -1,7 +1,9 @@
+sequential: true
 root: data
-slice_index: [48, 80]  # size should be (64, 128, 128)
-threshold: 0.1
-min_occupancy: 0.2
-in_memory: false
+slice_index: [24, 40]  # size should be (64, 64, 64)
+in_memory: true
+content_phase: 'random'
+motion_phase: '0'
+motion_aggregation: 'none'
 defaults:
   - /config/experiment/dataloader/dataset/ct@_here_

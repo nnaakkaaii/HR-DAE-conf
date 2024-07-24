@@ -13,7 +13,7 @@ transform_order_val:
 #   - pool3d
 defaults:
   - /config/experiment/dataloader/basic@_here_
-  - dataset: sliced_ct
+  - dataset: ct
   - transform@transform.pool3d: pool3d
   - transform@transform.min_max_normalization: min_max_normalization
   # - dataset: ct
